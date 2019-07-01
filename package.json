@@ -19,8 +19,8 @@
     "pelias-config": "^4.0.0",
     "pelias-dbclient": "^2.8.0",
     "pelias-logger": "^1.3.0",
-    "pelias-model": "^5.8.0",
-    "pelias-wof-admin-lookup": "^5.3.0",
+    "pelias-model": "file:../model",
+    "pelias-wof-admin-lookup": "file:../wof-admin-lookup",
     "through2": "^3.0.0",
     "through2-filter": "^3.0.0",
     "through2-map": "^3.0.0",
@@ -45,7 +45,8 @@
     "lint": "jshint .",
     "validate": "npm ls",
     "travis": "npm ls",
-    "start": "./bin/start"
+    "start": "./bin/start",
+    "debug": "./bin/debug"
   },
   "repository": {
     "type": "git",
