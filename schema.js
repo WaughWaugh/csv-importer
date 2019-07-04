@@ -14,7 +14,8 @@ module.exports = Joi.object().keys({
       datapath: Joi.string(),
       download: Joi.array(),
       deduplicate: Joi.boolean(),
-      adminLookup: Joi.boolean()
+      adminLookup: Joi.boolean(),
+      country: Joi.string()
     })
   }).requiredKeys('csv').unknown(true)
 }).requiredKeys('imports').unknown(true);
