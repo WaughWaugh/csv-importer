@@ -34,6 +34,8 @@ Valid column names for housenumber are: `housenumber`, `number`
 
 Valid column names for postalcode are: `postalcode`, `zipcode`
 
+Valid column names for intersections are: `cross_street` (note: `street` is also required!)
+
 ## Name
 A name is a free-form string that represents the name of a record. It might be
 the name of a venue which also has an address, or the name of a city, mountain, or other interesting feature.
@@ -185,7 +187,7 @@ hash. A sample configuration file might look like:
 }
 ```
 
-**Important:** You must put any custom source and layers imported by your data in `pelias.json as explained in the relevant [API configuration documentation](https://github.com/pelias/api#custom-sources-and-layers). For a reasonably common use case for the source `csv` with only records in the `address` layer, the following configuration is a good starting point:
+**Important:** You must put any custom source and layers imported by your data in `pelias.json` as explained in the relevant [API configuration documentation](https://github.com/pelias/api#custom-sources-and-layers). For a reasonably common use case for the source `csv` with only records in the `address` layer, the following configuration is a good starting point:
 
 
 ```
